@@ -484,3 +484,46 @@ select {
   border: none;
   border-radius: 15px;
 }
+
+/*footer*/
+footer {
+  background-color: #2e2d4d;
+  color: #fff;
+  padding: 30px;
+}
+
+.footer-container {
+  height: 200px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer-header {
+  margin: 0;
+  color: #fff;
+}
+
+.footer-about {
+  margin-right: 20px;
+}
+
+.footer-follow {
+  display: flex;
+}
+
+.footer-follow-about {
+  margin-right: 20px;
+}
+
+.footer-copyright {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding-top: 20px;
+  font-size: 12px;
+}
+
+.info {
+  width: 320px;
+}
