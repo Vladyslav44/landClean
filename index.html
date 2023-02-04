@@ -19,13 +19,19 @@
                 <div class="logo-image">
                     <img src="./images/logo.png" alt="our logo">
                 </div>
-                <div class="logo-name">FIRST CLEANING</div>
-                <div class="logo-motto">Local Natural Clean</div>
+                <div class="logo-name">ZÜGEL ZENTRAL</div>
+                <div class="logo-motto">Umzüge + Reinigung</div>
             </div>
             <div class="menus">
                 <a href="#header">home</a>
-                <a href="">Unternehmen</a>
-                <a href="">Dienstleistungen</a>
+                <div class="dropdown">
+                    <a href="#" class="dropdown-toggle">Dienstleistungen</a>
+                    <div class="dropdown-menu">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                </div>
                 <a href="">Bewertungen</a>
                 <a href="#footer">Kontakt</a>
             </div>
@@ -34,17 +40,16 @@
 
         <!-- home section  -->
         <div class="home-section" id="header">
-            <div class="booking-form">
-                <div class="booking-fomr__title">ERHALTEN SIE SOFORT EIN ANGEBOT</div>
-                <div class="booking-fomr__subtitle">Aliquip ex ea commodo consequat placeat facere possimus, omnis voluptas assumenda est.</div>
-                <form action="sender.php" method="post">
-                    <input type="text" class="name" name="name" placeholder="Name" required>
-                    <input type="text" name="surname" placeholder="Nachname" required>
-                    <input type="text" class="phone" name="phone" placeholder="Telefon">
-                    <input type="email" name="email" placeholder="Email" required>
-                    <button type="button" class="gradient-button form" id="button12">Formular absenden</button>
-                    <div class="status"></div>
-                </form>
+            <div class="booking-form formil">
+                <div class="booking-fomr__title">
+                    Kontakt Formular
+                </div>
+                <div class="booking-fomr__subtitle">
+                    Kontaktieren Sie uns, indem Sie auf diese
+                    Schaltfläche klicken, um eine Bewerbung einzureichen. Nach dem Ausfüllen des
+                    Formulars wird sich der Unternehmensleiter innerhalb eines Tages mit Ihnen in Verbindung setzen
+                </div>
+                <button class="gradient-button">Offerte Einholen</button>
             </div>
             <div class="information">
                 <div class="information-title">PROFESSIONELLE REINIGUNGSDIENSTE FÜR IHR HAUS</div>
@@ -103,7 +108,7 @@
                 <h4>DRESS CLEANING</h4>
                 <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
                 type</p>
-                <a class="link" id="link1">learn more</a>
+                <a class="link" id="link1">LEARN MORE</a>
             </div>
             <div class="solution-card">
                 <img src="./images/solution2.png" alt="Card photo">
@@ -111,7 +116,7 @@
                 <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
                     galley of
                     type</p>
-                <a class="link" id="link2">learn more</a>
+                <a class="link" id="link2">LEARN MORE</a>
             </div>
             <div class="solution-card">
                 <img src="./images/solution3.png" alt="Card photo">
@@ -119,15 +124,26 @@
                 <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
                     galley of
                     type</p>
-                <a class="link" id="link3">learn more</a>
+                <a class="link" id="link3">LEARN MORE</a>
             </div>
         </div>
     </div>
 
     <div id="myModal1" class="modal1">
         <div class="modal-content1">
-            <span id="closeBtn1" class="close1">&times;</span>
-            <p id="modalText1">Modal text will appear here...</p>
+            <div class="modal-header1">
+                <div class="logo-image">
+                    <img src="./images/logo.png" alt="our logo">
+                </div>
+                <h3>ZÜGEL ZENTRAL</h3>
+                <span id="closeBtn1" class="close1">&times;</span>
+            </div>
+            <div id="modalText1">
+                Modal text will appear here...
+            </div>
+            <div class="modal-footer1">
+                <!-- Footer content here -->
+            </div>
         </div>
     </div>
 
@@ -152,7 +168,7 @@
             <button class="gradient-button">KONTAKTIERE UNS</button>
             <div id="modal" class="modal">
                 <div class="modal-content">
-                    <span class="close-button">&times;</span>
+                    <span id="close-button">&times;</span>
                     <form action="sender.php" method="post">
                         <input type="text" class="name" name="name" placeholder="Name" required>
                         <input type="text" name="surname" placeholder="Nachname" required>
@@ -200,6 +216,19 @@
             </div>
         </div>
     </div>
+
+    <div class="booking-form">
+        <div class="booking-fomr__title">ERHALTEN SIE SOFORT EIN ANGEBOT</div>
+        <div class="booking-fomr__subtitle">Aliquip ex ea commodo consequat placeat facere possimus, omnis voluptas assumenda est.</div>
+        <form action="sender.php" method="post">
+            <input type="text" class="name" name="name" placeholder="Name" required>
+            <input type="text" name="surname" placeholder="Nachname" required>
+            <input type="text" class="phone" name="phone" placeholder="Telefon">
+            <input type="email" name="email" placeholder="Email" required>
+            <button type="button" class="gradient-button form" id="button12">Formular absenden</button>
+            <div class="status"></div>
+        </form>
+    </div>
     <!-- footer section  -->
     <footer id="footer">
         <div class="footer-container">
@@ -208,20 +237,19 @@
                 <p>Umzüge + Reinigung</p>
                 <p>Bielstrasse 8, 2545 Selzach</p>
             </div>
-            <div class="footer-follow">
-                <div class="footer-follow-about">
-                    <h4 class="footer-header">Offizielle Infos</h4>
-                    <p>+41 787 212 729</p>
-                    <p>imfo@zimmermaener.ch</p>
-                </div>
-                <div class="footer-follow-about">
-                    <h4 class="footer-header">Öffnungszeiten</h4>
-                    <p>Mo - Sa: 9 - 19 Uhr</p>
-                    <p class="info">It is a long established fact that a reader will be distracted by the readable content</p>
-                </div>
+            <div class="footer-follow-about">
+                <h4 class="footer-header">Kontakt Infos</h4>
+                <p>+41 78 721 27 29</p>
+                <p>imfo@zimmermaener.ch</p>
+            </div>
+            <div class="footer-follow-about">
+                <h4 class="footer-header">Öffnungszeiten</h4>
+                <p>Mon - Fr: 7:30 Uhr - 18:00 Uhr</p>
+                <p>Samstag: 9:00 Uhr - 16:00 Uhr</p>
+                <p class="info">Sonntag: Geschlossen</p>
             </div>
         </div>
-        <p class="footer-copyright">Copyright &copy; 2023 Your Company Name</p>
+        <p class="footer-copyright">Copyright © 2023 Your Zügel Zentral</p>
     </footer>
 
 </body>
