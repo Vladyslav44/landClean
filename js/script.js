@@ -28,27 +28,41 @@ jQuery(document).ready(function () {
     	}
     });
 
+	const counters = document.querySelectorAll('.counter-container input[type="text"]');
+	const buttons = document.querySelectorAll('.counter-button');
+
+	buttons.forEach(button => {
+		button.addEventListener('click', function() {
+			const counter = document.querySelector(`#${this.dataset.counter}`);
+			const value = parseInt(counter.value);
+			const newValue = value + parseInt(this.dataset.value);
+
+			if (newValue >= 0 && newValue <= 10) {
+				counter.value = newValue;
+			}
+		});
+	});
 
 });
 /// main logic
-const button = document.getElementById("button123");
-const button12 = document.getElementById("button12");
-const notification = document.getElementById("notification");
+// const button = document.getElementById("button123");
+// const button12 = document.getElementById("button12");
+// const notification = document.getElementById("notification");
+//
+// button.addEventListener("click", function() {
+// 	notification.classList.remove("hidden");
+// 	setTimeout(function() {
+// 		notification.classList.add("hidden");
+// 	}, 4000);
+// });
+// button12.addEventListener("click", function() {
+// 	notification.classList.remove("hidden");
+// 	setTimeout(function() {
+// 		notification.classList.add("hidden");
+// 	}, 4000);
+// });
 
-button.addEventListener("click", function() {
-	notification.classList.remove("hidden");
-	setTimeout(function() {
-		notification.classList.add("hidden");
-	}, 4000);
-});
-button12.addEventListener("click", function() {
-	notification.classList.remove("hidden");
-	setTimeout(function() {
-		notification.classList.add("hidden");
-	}, 4000);
-});
-
-const modalButton = document.getElementById("modal-button");
+const modalButtons = document.querySelectorAll(".gradient-button");
 const modal = document.getElementById("modal");
 const closeButton = document.getElementById("close-button");
 
@@ -74,8 +88,11 @@ window.addEventListener("click", function(event) {
 });
 
 // Add event listeners to open and close modal
-modalButton.addEventListener('click', showModal);
+modalButtons.forEach(button => {
+	button.addEventListener('click', showModal);
+});
 closeButton.addEventListener('click', hideModal);
+
 
 document.addEventListener("DOMContentLoaded", function() {
 	// Get the modal element
@@ -92,18 +109,21 @@ document.addEventListener("DOMContentLoaded", function() {
 
 	// Add click event listeners to each link
 	const modalTexts = [
-		"Lorem Ipsum, you need to be sure there " +
-		"isn't anything embarrassing hidden in the middle of text " +
-		"Lorem Ipsum, you need to be sure there isn't " +
-		"anything embarrassing hidden in the middle of text",
-		"Lorem Ipsum, you need to be sure there " +
-		"isn't anything embarrassing hidden in the middle of text " +
-		"Lorem Ipsum, you need to be sure there isn't " +
-		"anything embarrassing hidden in the middle of text",
-		"Lorem Ipsum, you need to be sure there " +
-		"isn't anything embarrassing hidden in the middle of text " +
-		"Lorem Ipsum, you need to be sure there isn't " +
-		"anything embarrassing hidden in the middle of text"
+		'<strong>Umzug und transport</strong><br>' +
+		'Zimmermänner garantiert einen seriösen, kompetenten ' +
+		'und absolut zuverlässigen Service für Ihren Umzug. Holen ' +
+		'Sie sich jetzt ein kostenloses Angebot, professionelle Beratung ' +
+		'und Unterstützung für Ihren Umzug ! Ihre vollständige Zufriedenheit ist unsere Priorität.<br>',
+		'<strong>Reinigung und wartung</strong><br>' +
+		'Wir passen unsere Reinigungsleistung jeden Bedürfnissen ' +
+		'an und sorgen so für Sauberkeit. Ob Umzugsreinigung, Büroreinigung, Baureinigung, Fensterreinigung  ' +
+		'oder Graffitis entfernen. Wir kümmern uns darum! Schnell, ' +
+		'zuverlässig und immer individuell auf Sie abgestimmt.<br>',
+		'<strong>Entsorgung</strong><br>' +
+		'Zimmermänner kümmert sich um Ihre Entsorgung. ' +
+		'Bei einem Umzug handelt es sich häufig um alte Möbel, ' +
+		'die Sie loswerden möchten, die jedoch schwer zu transportieren und sperrig sind. ' +
+		'Natürlich muss dieser Service nicht mit Ihrem Umzug zusammenhängen.<br>'
 	];
 
 	links.forEach((link, index) => {

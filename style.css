@@ -123,6 +123,11 @@ p { cursor: pointer}
   border-radius: 10px;
 }
 
+.zalop {
+  background: rgba(59, 58, 66, 0.78);
+
+}
+
 .booking-fomr__title {
   font-size: 24px;
   font-weight: 700;
@@ -301,6 +306,10 @@ select {
 }
 
 .solution-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
   padding: 20px 10px;
   margin-bottom: 40px;
   width: 300px;
@@ -325,7 +334,7 @@ select {
 }
 
 .solution-card p {
-  margin: 10px 0;
+  margin: 6px 0;
   font-size: 0.8rem;
   color: #979797;
 }
@@ -418,6 +427,10 @@ select {
   background-color: #baed29;
   border: none;
   border-radius: 15px;
+}
+
+.booking-section__image {
+  display: flex;
 }
 
 .booking-section__image img {
@@ -569,7 +582,8 @@ footer {
   background-color: #0077be;
 }
 
-.gradient-button {
+.gradient-button,
+.gradient-button1 {
   cursor: pointer;
   background: linear-gradient(to right, #3e68c5, #6853d9);
   border: none;
@@ -584,6 +598,12 @@ footer {
 }
 
 .gradient-button:hover {
+  background: linear-gradient(to right, #2d5ec7, #5138ce);
+  transform: scale(1.1);
+  box-shadow: 0px 0px 10px #333;
+  cursor: pointer;
+}
+.gradient-button1:hover {
   background: linear-gradient(to right, #2d5ec7, #5138ce);
   transform: scale(1.1);
   box-shadow: 0px 0px 10px #333;
@@ -624,7 +644,7 @@ footer {
   cursor: pointer;
 }
 .form {
-  margin-top: 20px;
+  margin-top: 13px;
 }
 
 @keyframes fadeIn {
@@ -725,12 +745,12 @@ footer {
 }
 
 .modal-footer1 {
+  color: white;
   border-bottom: 1px solid none;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   background: rgba(5, 6, 21, 0.89);
-  padding: 40px 16px;
-  color: black;
+  padding: 27px 16px;
   text-align: right;
 }
 
@@ -782,6 +802,29 @@ footer {
 .dropdown:hover .dropdown-menu {
   display: block;
 }
+
+.counter-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.counter-container input[type="text"] {
+  width: 40px;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.counter-container button:first-child {
+  margin-right: auto;
+}
+
+.counter-button {
+  width: 30px;
+  height: 30px;
+  font-size: 1.2rem;
+}
+
 
 
 

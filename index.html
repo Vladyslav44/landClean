@@ -24,16 +24,16 @@
             </div>
             <div class="menus">
                 <a href="#header">home</a>
-                <a href="">Unternehmen</a>
+                <a href="#about-section">Unternehmen</a>
                 <div class="dropdown">
-                    <a href="#" class="dropdown-toggle">Dienstleistungen</a>
+                    <a href="#solution-section" class="dropdown-toggle">Dienstleistungen</a>
                     <div class="dropdown-menu">
                         <a href="#">Umzug</a>
                         <a href="#">Reinigung</a>
                         <a href="#">Estsorgung</a>
                     </div>
                 </div>
-                <a href="">Bewertungen</a>
+                <a href="#booking-section">Bewertungen</a>
                 <a href="#footer">Kontakt</a>
             </div>
             <button class="gradient-button" id="modal-button">Offerte Einholen</button>
@@ -53,9 +53,10 @@
                 <button class="gradient-button">Offerte Einholen</button>
             </div>
             <div class="information">
-                <div class="information-title">PROFESSIONELLE REINIGUNGSDIENSTE FÜR IHR HAUS</div>
-                <div class="information-subtitle">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis autem vel eum iure reprehenderit qui in ea
-                voluptate</div>
+                <div class="information-title">Zügel Zentral <hr/> UMZÜGE + REINIGUNG</div>
+                <div class="information-subtitle">
+                    TAUCHEN SIE NACH EINEM ANSTRENGENDEN TAG IN EINE MYSTISCH ANGEHAUCHITE WELT DES ORIENTS AB.
+                </div>
                 <div class="information-carusel">
                     <img src="./images/carusel1.png" alt="carusel pics" class="information-carusel-pic1">
                     <img src="./images/carusel2.png" alt="carusel pics" class="information-carusel-pic2">
@@ -71,16 +72,16 @@
         </p>
     </div>
     <!-- about section  -->
-    <div class="about-section">
+    <div class="about-section" id="about-section">
         <div class="about-section__image">
             <img src="./images/about1.png" alt="about-section pic" class="about-section__image1">
             <img src="./images/about2.png" alt="about-section pic" class="about-section__image2">
         </div>
         <div class="about-section__info">
             <div class="about-info__title">Umzug und Reinigung in der ganzen Schweiz</div>
-            <div class="about-info__subtitle">Zügel Zentral ist spezialisiert auf Umzug, Reinigung und
-                Entsorgung. Mit Sitz in Solothurn im Kanton Solothurn stellen wir unser Know-how und unsere
-                Erfahrung in den Dienst von Privatpersonen und Unternehmen.</div>
+            <div class="about-info__subtitle">Zügel Zentral ist spezialisiert auf Umzug,
+                Reinigung und Entsorgung. Mit Sitz in Solothurn im Kanton Solothurn stellen
+                wir unser Know-how und unsere Erfahrung in den Dienst von Privatpersonen und Unternehmen.</div>
             <div class="about-info__checks">
                 <div class="about-check__1"><i class="fa fa-check"></i>Satisfied customers lorem ipsum</div>
                 <div class="about-check__2"><i class="fa fa-check"></i>Fast Cleaning</div>
@@ -95,36 +96,44 @@
     </div>
 
     <!-- solution section  -->
-    <div class="solution-section">
+    <div class="solution-section" id="solution-section">
         <div class="solution-header">
             <div class="solution-header_info">
-                <div class="solution-header_title">BEST SOLUTIONS FOR OWN BUSINESS</div>
-                <div class="solution-header_subtitle">Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text</div>
+                <div class="solution-header_title">Was können WIR</div>
+                <div class="solution-header_subtitle">Zimmermänner ist auf 3 Bereiche spezialisiert . Sie
+                    können sicher sein einen kompetenten professionellen Partner zu haben</div>
             </div>
 
         </div>
         <div class="solution-cards">
             <div class="solution-card">
                 <img src="./images/solution1.png" alt="Card photo">
-                <h4>DRESS CLEANING</h4>
-                <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
-                type</p>
+                <h4>UMZUG UND TRANSPORT</h4>
+                <div>
+                    <p>Privatumzug</p>
+                    <p>Spezialumzug</p>
+                    <p>Geschäftsumzug</p>
+                </div>
                 <a class="link" id="link1">LEARN MORE</a>
             </div>
             <div class="solution-card">
                 <img src="./images/solution2.png" alt="Card photo">
-                <h4>CARPET CLEANING</h4>
-                <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
-                    galley of
-                    type</p>
+                <h4>REINIGUNG UND WARTUNG</h4>
+                <div>
+                    <p>Zügiger Arbeitsbeginn</p>
+                    <p>Reinigung aller Größenordnungen</p>
+                    <p>Garantierte Reinigung der Verschmutzung</p>
+                </div>
                 <a class="link" id="link2">LEARN MORE</a>
             </div>
             <div class="solution-card">
                 <img src="./images/solution3.png" alt="Card photo">
-                <h4>CAR CLEANING</h4>
-                <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
-                    galley of
-                    type</p>
+                <h4>CENTSORGUNG</h4>
+                <div>
+                    <p>Entsorgen Ihre alten Möbel</p>
+                    <p>Entsorgen Ihre alten Elektrogeräte</p>
+                    <p>Entsorgen Ihre unnötigen Kleinigkeiten</p>
+                </div>
                 <a class="link" id="link3">LEARN MORE</a>
             </div>
         </div>
@@ -143,7 +152,7 @@
                 Modal text will appear here...
             </div>
             <div class="modal-footer1">
-                <!-- Footer content here -->
+                <p>+ 41 78 721 27 29</p>
             </div>
         </div>
     </div>
@@ -160,23 +169,68 @@
     </div>
 
     <!-- booking section  -->
-    <div class="booking-section">
+    <div class="booking-section" id="booking-section">
         <div class="booking-section__info">
-            <div class="booking-info__title">WÄHLEN SIE DEN ERSTEN REINIGUNGSSERVICE, DEM SIE VERTRAUEN KÖNNEN</div>
-            <div class="booking-info__subtitle">This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum,
-            "Lorem ipsum dolor sit amet. lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id euis sed
-            odio sit amet nibh vulputate cursus.</div>
-            <button class="gradient-button">KONTAKTIERE UNS</button>
+            <div class="booking-form zalop">
+                <div class="booking-fomr__title">ERHALTEN SIE SOFORT EIN ANGEBOT</div>
+                <div class="booking-fomr__subtitle">Aliquip ex ea commodo consequat placeat facere possimus, omnis voluptas assumenda est.</div>
+                <form action="sender.php" method="post">
+                    <input type="text" class="name" name="name" placeholder="Name" required>
+                    <input type="text" name="surname" placeholder="Nachname" required>
+                    <input type="text" class="phone" name="phone" placeholder="Telefon">
+                    <input type="email" name="email" placeholder="Email" required>
+                    <button type="button" class="gradient-button1 form" id="button12">Formular absenden</button>
+                    <div class="status"></div>
+                </form>
+            </div>
             <div id="modal" class="modal">
                 <div class="modal-content">
                     <span id="close-button">&times;</span>
-                    <form action="sender.php" method="post">
-                        <input type="text" class="name" name="name" placeholder="Name" required>
-                        <input type="text" name="surname" placeholder="Nachname" required>
-                        <input type="text" class="phone" name="phone" placeholder="Telefon">
-                        <input type="email" name="email" placeholder="Email" required>
-                        <button type="button" class="gradient-button form" id="button123">Formular absenden</button>
-                        <div class="status"></div>
+                    <form action="sendform.php" method="post">
+                        <label for="date">Date:</label>
+                        <input type="date" id="date" name="date" value="" required>
+
+                        <div class="counter-container">
+                            <label for="counter1">Counter 1:</label>
+                            <button type="button" class="counter-button" data-counter="counter1" data-value="-1">-</button>
+                            <input type="text" id="counter1" name="counter1" value="0" readonly>
+                            <button type="button" class="counter-button" data-counter="counter1" data-value="1">+</button>
+                        </div>
+
+                        <div class="counter-container">
+                            <label for="counter2">Counter 2:</label>
+                            <button type="button" class="counter-button" data-counter="counter2" data-value="-1">-</button>
+                            <input type="text" id="counter2" name="counter2" value="0" readonly>
+                            <button type="button" class="counter-button" data-counter="counter2" data-value="1">+</button>
+                        </div>
+
+                        <div class="counter-container">
+                            <label for="counter3">Counter 3:</label>
+                            <button type="button" class="counter-button" data-counter="counter3" data-value="-1">-</button>
+                            <input type="text" id="counter3" name="counter3" value="0" readonly>
+                            <button type="button" class="counter-button" data-counter="counter3" data-value="1">+</button>
+                        </div>
+
+                        <div class="counter-container">
+                            <label for="counter4">Counter 4:</label>
+                            <button type="button" class="counter-button" data-counter="counter4" data-value="-1">-</button>
+                            <input type="text" id="counter4" name="counter4" value="0" readonly>
+                            <button type="button" class="counter-button" data-counter="counter4" data-value="1">+</button>
+                        </div>
+
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+
+                        <label for="surname">Surname:</label>
+                        <input type="text" id="surname" name="surname" required>
+
+                        <label for="address">Address:</label>
+                        <input type="text" id="address" name="address" required>
+
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" required></textarea>
+
+                        <input type="submit" value="Submit">
                     </form>
                 </div>
             </div>
@@ -188,47 +242,32 @@
 
     <!--   -->
     <div class="team-section">
-        <div class="team-section__title">WIR HABEN EIN FANTASTISCHES TEAMMITGLIED</div>
+        <div class="team-section__title">WARUM WIR EMPFOHLEN WERDEN</div>
         <div class="team-section__subtitle">Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text</div>
         <div class="team-section__cards">
             <div class="team-card">
-                <span class="team-card__name">Tiana Franci</span><br>
-                <span class="team-card__position">House Cleaner</span>
-                <i class="fa-brands fa-whatsapp"></i>
+                <span class="team-card__name">Professionalität</span><br>
+                <span class="team-card__position">Wir stellen Ihnen unsere
+                    Know how und unserer professionelle Strenge zur Verfügung.</span>
                 <img src="./images/taem1.png" alt="team member pic" class="team-card__image">
             </div>
             <div class="team-card">
-                <span class="team-card__name">Tiana Franci</span><br>
-                <span class="team-card__position">House Cleaner</span>
-                <i class="fa-brands fa-whatsapp"></i>
+                <span class="team-card__name">Qualität</span><br>
+                <span class="team-card__position">Wir wählen unsere Mitarbeiter sorgfältig
+                    aus, um Ihnen einen einwandfreien Service zu bieten.</span>
                 <img src="./images/taem2.png" alt="team member pic" class="team-card__image">
             </div>
             <div class="team-card">
-                <span class="team-card__name">Tiana Franci</span><br>
-                <span class="team-card__position">House Cleaner</span>
-                <i class="fa-brands fa-whatsapp"></i>
+                <span class="team-card__name">Hören</span><br>
+                <span class="team-card__position">Wir finden eine Antwort und eine ösung für Ire Bedürfnisse</span>
                 <img src="./images/taem3.png" alt="team member pic" class="team-card__image">
             </div>
             <div class="team-card">
-                <span class="team-card__name">Tiana Franci</span><br>
-                <span class="team-card__position">House Cleaner</span>
-                <i class="fa-brands fa-whatsapp"></i>
+                <span class="team-card__name">Preis</span><br>
+                <span class="team-card__position">Entspricht der qualität</span>
                 <img src="./images/taem4.png" alt="team member pic" class="team-card__image">
             </div>
         </div>
-    </div>
-
-    <div class="booking-form">
-        <div class="booking-fomr__title">ERHALTEN SIE SOFORT EIN ANGEBOT</div>
-        <div class="booking-fomr__subtitle">Aliquip ex ea commodo consequat placeat facere possimus, omnis voluptas assumenda est.</div>
-        <form action="sender.php" method="post">
-            <input type="text" class="name" name="name" placeholder="Name" required>
-            <input type="text" name="surname" placeholder="Nachname" required>
-            <input type="text" class="phone" name="phone" placeholder="Telefon">
-            <input type="email" name="email" placeholder="Email" required>
-            <button type="button" class="gradient-button form" id="button12">Formular absenden</button>
-            <div class="status"></div>
-        </form>
     </div>
     <!-- footer section  -->
     <footer id="footer">
