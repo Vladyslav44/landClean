@@ -4,11 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-    <script src="js/jquery.maskedinput.js"></script>
-    <script src="js/jquery.validate.min.js"></script>
-    <script src="js/script.js"></script>
-<!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
         integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -17,17 +12,9 @@
 </head>
 <body>
     <!-- header sectionm  -->
-    <head class="header" id="header">
+    <head class="header">
         <!-- nav bar section  -->
         <nav class="navbar">
-            <div class="menus">
-                <a href="">home</a>
-                <a href="">Unternehmen</a>
-                <a href="">Dienstleistungen</a>
-                <a href="">Bewertungen</a>
-                <a href="">Kontakt</a>
-                <a href="">Offerte Einholen</a>
-            </div>
             <div class="logo">
                 <div class="logo-image">
                     <img src="./images/logo.png" alt="our logo">
@@ -35,14 +22,18 @@
                 <div class="logo-name">FIRST CLEANING</div>
                 <div class="logo-motto">Local Natural Clean</div>
             </div>
-            <div class="call">
-                <div class="call-text">Want a free estimate now?</div>
-                <div class="call-number"><i class="fa-solid fa-phone"></i><span>+012-345-677-890</span></div>
+            <div class="menus">
+                <a href="#header">home</a>
+                <a href="">Unternehmen</a>
+                <a href="">Dienstleistungen</a>
+                <a href="">Bewertungen</a>
+                <a href="#footer">Kontakt</a>
             </div>
+            <button class="gradient-button" id="modal-button">Offerte Einholen</button>
         </nav>
 
         <!-- home section  -->
-        <div class="home-section">
+        <div class="home-section" id="header">
             <div class="booking-form">
                 <div class="booking-fomr__title">ERHALTEN SIE SOFORT EIN ANGEBOT</div>
                 <div class="booking-fomr__subtitle">Aliquip ex ea commodo consequat placeat facere possimus, omnis voluptas assumenda est.</div>
@@ -51,12 +42,12 @@
                     <input type="text" name="surname" placeholder="Nachname" required>
                     <input type="text" class="phone" name="phone" placeholder="Telefon">
                     <input type="email" name="email" placeholder="Email" required>
-                    <button type="button" class="send-form">Formular absenden</button>
+                    <button type="button" class="gradient-button form" id="button12">Formular absenden</button>
                     <div class="status"></div>
                 </form>
             </div>
             <div class="information">
-                <div class="information-title">PROFESSIONAL YOUR HOME CLEANING SERVICES</div>
+                <div class="information-title">PROFESSIONELLE REINIGUNGSDIENSTE FÜR IHR HAUS</div>
                 <div class="information-subtitle">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis autem vel eum iure reprehenderit qui in ea
                 voluptate</div>
                 <div class="information-carusel">
@@ -68,6 +59,11 @@
             </div>
         </div>
     </head>
+    <div id="notification" class="hidden">
+        <p>Erfolg!</p>
+        <p>Formular gesendet
+        </p>
+    </div>
     <!-- about section  -->
     <div class="about-section">
         <div class="about-section__image">
@@ -75,12 +71,10 @@
             <img src="./images/about2.png" alt="about-section pic" class="about-section__image2">
         </div>
         <div class="about-section__info">
-            <div class="about-info__title">ABOUT FIRST CLEANING</div>
-            <div class="about-info__subtitle">There are many variations of passages of Lorem Ipsum available, but the
-                majority have suffered alteration in some form,
-                by injected humour, or randomised words which don't look even slightly believable. If you are going to use a
-                passage of
-                Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text</div>
+            <div class="about-info__title">Umzug und Reinigung in der ganzen Schweiz</div>
+            <div class="about-info__subtitle">Zügel Zentral ist spezialisiert auf Umzug, Reinigung und
+                Entsorgung. Mit Sitz in Solothurn im Kanton Solothurn stellen wir unser Know-how und unsere
+                Erfahrung in den Dienst von Privatpersonen und Unternehmen.</div>
             <div class="about-info__checks">
                 <div class="about-check__1"><i class="fa fa-check"></i>Satisfied customers lorem ipsum</div>
                 <div class="about-check__2"><i class="fa fa-check"></i>Fast Cleaning</div>
@@ -109,7 +103,7 @@
                 <h4>DRESS CLEANING</h4>
                 <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
                 type</p>
-                <a href="">learn more</a>
+                <a class="link" id="link1">learn more</a>
             </div>
             <div class="solution-card">
                 <img src="./images/solution2.png" alt="Card photo">
@@ -117,7 +111,7 @@
                 <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
                     galley of
                     type</p>
-                <a href="">learn more</a>
+                <a class="link" id="link2">learn more</a>
             </div>
             <div class="solution-card">
                 <img src="./images/solution3.png" alt="Card photo">
@@ -125,8 +119,15 @@
                 <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
                     galley of
                     type</p>
-                <a href="">learn more</a>
+                <a class="link" id="link3">learn more</a>
             </div>
+        </div>
+    </div>
+
+    <div id="myModal1" class="modal1">
+        <div class="modal-content1">
+            <span id="closeBtn1" class="close1">&times;</span>
+            <p id="modalText1">Modal text will appear here...</p>
         </div>
     </div>
 
@@ -148,7 +149,20 @@
             <div class="booking-info__subtitle">This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum,
             "Lorem ipsum dolor sit amet. lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id euis sed
             odio sit amet nibh vulputate cursus.</div>
-            <button class="booking-info__button">Booking Now</button>
+            <button class="gradient-button">KONTAKTIERE UNS</button>
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                    <span class="close-button">&times;</span>
+                    <form action="sender.php" method="post">
+                        <input type="text" class="name" name="name" placeholder="Name" required>
+                        <input type="text" name="surname" placeholder="Nachname" required>
+                        <input type="text" class="phone" name="phone" placeholder="Telefon">
+                        <input type="email" name="email" placeholder="Email" required>
+                        <button type="button" class="gradient-button form" id="button123">Formular absenden</button>
+                        <div class="status"></div>
+                    </form>
+                </div>
+            </div>
         </div>
         <div class="booking-section__image">
             <img src="./images/booking.png" alt="pic">
@@ -187,36 +201,32 @@
         </div>
     </div>
     <!-- footer section  -->
-    <footer>
+    <footer id="footer">
         <div class="footer-container">
             <div class="footer-about">
-                <h3 class="footer-header">FIRST CLEANING</h3>
-                <p>Local Natural Clean</p>
-                <p>Street keliling aley, Melbourne, 2040, Australia</p>
+                <h3 class="footer-header">ZÜGEL ZENTRAL</h3>
+                <p>Umzüge + Reinigung</p>
+                <p>Bielstrasse 8, 2545 Selzach</p>
             </div>
             <div class="footer-follow">
                 <div class="footer-follow-about">
                     <h4 class="footer-header">Offizielle Infos</h4>
-                    <p>+012 345 678 90</p>
-                    <p>email@cleningservice.com</p>
+                    <p>+41 787 212 729</p>
+                    <p>imfo@zimmermaener.ch</p>
                 </div>
                 <div class="footer-follow-about">
                     <h4 class="footer-header">Öffnungszeiten</h4>
                     <p>Mo - Sa: 9 - 19 Uhr</p>
                     <p class="info">It is a long established fact that a reader will be distracted by the readable content</p>
                 </div>
-<!--                <div class="footer-follow-social">-->
-<!--                    <h4 class="footer-header">Follow us</h4>-->
-<!--                    <p>-->
-<!--                        <a href="#">Facebook</a>-->
-<!--                        <a href="#">Twitter</a>-->
-<!--                        <a href="#">Instagram</a>-->
-<!--                    </p>-->
-<!--                </div>-->
             </div>
         </div>
         <p class="footer-copyright">Copyright &copy; 2023 Your Company Name</p>
     </footer>
 
 </body>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+<script src="js/jquery.maskedinput.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script src="js/script.js"></script>
 </html>
