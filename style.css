@@ -464,7 +464,15 @@ select {
   justify-content: center;
 }
 
+.information-carusel {
+  border-radius: 10px;
+}
+
 .team-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin: 25px;
   padding: 10px;
   width: 280px;
@@ -472,6 +480,12 @@ select {
   box-shadow: 0px 13.0963px 43px rgba(0, 0, 0, 0.05);
   border-radius: 24px;
   border: 2px solid rgba(186, 237, 41, 1);
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+.team-card:hover {
+  transform: scale(1.1);
 }
 
 .team-card__name {
@@ -497,7 +511,7 @@ select {
 
 .team-card__image {
   margin-top: 10px;
-  width: 100%;
+  width: 60%;
 }
 
 .div-for-btn {
@@ -826,9 +840,45 @@ footer {
 }
 
 
+.container {
+  display: flex;
+}
 
+.block {
+  flex: 1;
+  text-align: center;
+}
 
+.number {
+  font-size: 36px;
+  margin: 0;
+  padding: 20px;
+}
 
+.icon {
+  padding: 9px;
+  width: 100px;
+  height: 100px;
+  margin: 0;
+  cursor: pointer;
+  transition: transform 0.3s;
+
+}
+
+.icon:hover {
+  transform: scale(1.1);
+}
+
+.text {
+  color: #646363;
+  font-family: Ubuntu, sans-serif !important;
+  font-size: 18px;
+  margin: 0;
+}
+
+.nav {
+  padding: 92px;
+}
 
 
 

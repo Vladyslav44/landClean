@@ -44,23 +44,6 @@ jQuery(document).ready(function () {
 	});
 
 });
-/// main logic
-// const button = document.getElementById("button123");
-// const button12 = document.getElementById("button12");
-// const notification = document.getElementById("notification");
-//
-// button.addEventListener("click", function() {
-// 	notification.classList.remove("hidden");
-// 	setTimeout(function() {
-// 		notification.classList.add("hidden");
-// 	}, 4000);
-// });
-// button12.addEventListener("click", function() {
-// 	notification.classList.remove("hidden");
-// 	setTimeout(function() {
-// 		notification.classList.add("hidden");
-// 	}, 4000);
-// });
 
 const modalButtons = document.querySelectorAll(".gradient-button");
 const modal = document.getElementById("modal");
