@@ -96,6 +96,7 @@ p { cursor: pointer}
 .home-section {
   padding-top: 150px;
   padding-left: 150px;
+  padding-right: 150px;
   padding-bottom: 30px;
   background: linear-gradient(
       180deg,
@@ -460,6 +461,7 @@ select {
 
 /* our team section  --cards*/
 .team-section__cards {
+  padding-bottom: 60px;
   display: flex;
   justify-content: center;
 }
@@ -880,5 +882,134 @@ footer {
   padding: 92px;
 }
 
+@media (max-width: 1450px) {
+  .home-section {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .information-carusel {
+    display: none;
+  }
+
+  .information-subtitle {
+    padding-bottom: 20px;
+  }
+
+  .information {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .about-section__image {
+    display: none;
+  }
+
+  .block {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 1050px) {
+  .booking-section__image {
+    display: none;
+  }
+
+  .team-section__cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .nav {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .solution-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.hamburger-menu {
+  display: none;
+  cursor: pointer;
+}
+
+.nav-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.sub-menu {
+  display: none;
+}
+
+@media (max-width: 1000px) {
+  .hamburger-menu {
+    display: block;
+  }
+
+  .nav-menu {
+    display: none;
+  }
+}
+
+/*burg*/
+.hamburger-menu {
+  display: none;
+  cursor: pointer;
+}
+
+.nav-menu {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.dropdown-menu {
+  display: none;
+  animation: dropdown 0.5s ease-in-out;
+}
+
+@keyframes dropdown {
+  0% {
+    transform: translateY(-10%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+.nav-menu {
+  display: none;
+}
+@media (max-width: 1250px) {
+  .hamburger-menu {
+    display: block;
+  }
+  .nav-menu {
+    display: none;
+  }
+  .menus {
+    display: none;
+  }
+}
 
 
