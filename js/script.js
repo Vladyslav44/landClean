@@ -142,16 +142,4 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 //burg
-const hamburgerMenu = document.querySelector(".hamburger-menu");
-const navMenu = document.querySelector(".nav-menu");
-const dropdownToggle = document.querySelector(".dropdown-toggle");
-const dropdownMenu = document.querySelector(".dropdown-menu");
-
-hamburgerMenu.addEventListener("click", () => {
-	navMenu.classList.toggle("active");
-});
-
-dropdownToggle.addEventListener("click", () => {
-	dropdownMenu.classList.toggle("active");
-});
 

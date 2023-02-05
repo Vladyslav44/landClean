@@ -911,7 +911,9 @@ footer {
   .about-section__image {
     display: none;
   }
-
+  .menus {
+    display: none;
+  }
   .block {
     padding: 15px;
   }
@@ -967,49 +969,46 @@ footer {
   .nav-menu {
     display: none;
   }
+  .footer-copyright {
+    display: none;
+  }
+  #footer {
+    height: 340px;
+  }
+  .footer-container {
+    display: block;
+    font-size: 13px;
+  }
+}
+@media (max-width: 450px) {
+  .about-info__subtitle,
+  .about-info__title {
+    width: 500px;
+  }
+}
+@media (max-width: 700px) {
+  .about-check__1,
+  .about-check__2,
+  .about-check__3,
+  .about-check__4,
+  .home-section,
+  .solution-section,
+  .how-section,
+  .team-section,
+  .navbar,
+  .booking-section {
+    width: 690px;
+  }
+
+  #footer {
+    width: 690px;
+  }
+
+  .zalooopa {
+    margin-right: 30px;
+  }
 }
 
 /*burg*/
-.hamburger-menu {
-  display: none;
-  cursor: pointer;
-}
-
-.nav-menu {
-  color: white;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.dropdown-menu {
-  display: none;
-  animation: dropdown 0.5s ease-in-out;
-}
-
-@keyframes dropdown {
-  0% {
-    transform: translateY(-10%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0%);
-    opacity: 1;
-  }
-}
-.nav-menu {
-  display: none;
-}
-@media (max-width: 1250px) {
-  .hamburger-menu {
-    display: block;
-  }
-  .nav-menu {
-    display: none;
-  }
-  .menus {
-    display: none;
-  }
-}
 
 
